@@ -1,0 +1,70 @@
+.header {
+  /* border: 1px solid blue; */
+  height: 80px;
+  width: 100%;
+  /* max-width: 100%; */
+  background-color: rgb(25, 109, 59);
+}
+.navbar {
+  /* border: 1px solid blue; */
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rgb(25, 109, 59); */
+  color: white;
+}
+
+.section-1 {
+  /* border: 1px solid blue; */
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  left: 30px;
+  cursor: pointer;
+
+}
+.section-1 i {
+  color: rgb(25, 109, 59);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  
+}
+
+.section-3 {
+  /* border: 1px solid blue; */
+  display: flex;
+  height: 40px;
+  gap: 20px;
+  position: relative;
+  right: 30px;
+}
+.myaccount{
+    /* border: 1px solid red; */
+    width: 100px;
+    align-content: center;
+    font-weight: 500;
+  cursor: pointer;
+
+}
+.logout {
+  /* height: 40px; */
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  width: 150px;
+  font-weight: bolder;
+  color: red;
+  cursor: pointer;
+}

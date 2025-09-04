@@ -1,0 +1,176 @@
+.lognipage-main {
+  /* border: 1px solid red; */
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Login-page {
+  /* border: 1px solid black; */
+  height: 90vh;
+  width: 80vw;
+  margin: auto;
+  margin-top: auto;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  box-shadow: 5px 5px 5px rgb(25, 109, 59), -5px -5px 5px rgb(25, 109, 59);
+
+  /* box-shadow: 7px 7px 15px rgb(51, 161, 95),-7px -7px 10px rgb(51, 161, 95); */
+}
+.design-effect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  background-color: rgb(25, 109, 59);
+  border-radius: 60px 350px 350px 60px;
+}
+.design-effect-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  background-color: rgb(25, 109, 59);
+  border-radius: 350px 60px 60px 350px;
+  /* border: 1px solid red; */
+}
+.Login-left {
+  /* border: 1px solid black; */
+  height: 700px;
+  width: 50vw;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+}
+.Login-right {
+  /* border: 1px solid red; */
+  height: 700px;
+  width: 50vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: white;
+  font-size: 1rem;
+  /* background-color: rgb(25, 109, 59); */
+}
+.vertical-line {
+  height: 100%;
+  width: 1px;
+  background: white;
+  border: none;
+}
+
+.logo-div {
+  /* border: 1px solid black; */
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: white;
+  color: rgb(25, 109, 59);
+  font-weight: bolder;
+  font-size: 30px;
+  align-content: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 10px;
+}
+.logo-center {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.logo-containdiv{
+  margin-bottom: 50px;
+
+}
+.input-divs{
+  height: 40px;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  outline: none;
+  background-color: rgb(197, 222, 243);
+}
+.form-submision{
+  height: 40px;
+  width: 100%;
+  max-width: 150px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(25, 109, 59);
+  border: none;
+  font-weight: bolder;
+
+}
+.sign-up{
+  height: 40px;
+  width: 150px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(25, 109, 59);
+  border: none;
+  font-weight: bolder;
+
+}
+.wish-div{
+  margin-bottom: 50px;
+}
+.info{
+  margin-bottom: 50px;
+}
+.button-sign-in{
+  margin-bottom: 50px;
+}
+.welcome{
+  margin-bottom: 30px;
+}
+.info-1{
+  margin-bottom: 40px;
+}
+.button-login{
+  margin-top: 20px;
+}
+.redirct-to-signup{
+  margin-top: 50px;
+}
+.signup-link,
+.forgot-pass-link{
+  text-decoration: none;
+}
+@media screen and (max-width:650px) {
+
+  .design-effect{
+    display: none;
+  }
+  .design-effect-2{
+    height: 100%;
+    width: 100%;
+  border-radius: 200px 60px 60px 200px;
+
+  }
+}
+
+@media screen and (max-width:1050px) {
+
+  .design-effect-2{
+    height: 100%;
+    /* width: 100%; */
+  }
+}

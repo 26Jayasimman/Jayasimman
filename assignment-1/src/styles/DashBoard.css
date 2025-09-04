@@ -1,0 +1,43 @@
+.dashboard {
+  /* border: 1px solid orange; */
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  overflow-y: auto;
+  scrollbar-width: none;
+  grid-template-columns: 24vw 1fr;
+  gap: 10px;
+}
+.header-component {
+  /* border: 1px solid yellow; */
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.dynamic-component {
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 20px;
+  /* margin: 50px; */
+}
+.main-component {
+  /* border: 1px solid red; */
+  height: 100vh;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 10px;
+  overflow-y: hidden;
+  overflow: hidden;
+  scrollbar-width: none;
+  box-shadow: 5px 5px 10px rgb(10, 122, 29), -5px -5px 10px rgb(10, 122, 29);
+}

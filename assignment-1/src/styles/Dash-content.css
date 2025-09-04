@@ -1,0 +1,91 @@
+.posts-main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.post-card {
+  width: 600px;
+  min-height: 200px;
+  padding: 20px 50px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 5px 5px 15px rgba(10, 122, 29, 0.4),
+    -5px -5px 15px rgba(10, 122, 29, 0.4);
+  text-align: center;
+  position: relative;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.slide-next {
+  animation: slideInRight 0.5s;
+}
+
+.slide-prev {
+  animation: slideInLeft 0.5s;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.post-card h3 {
+  color: rgb(10, 122, 29);
+  margin-bottom: 10px;
+}
+
+.post-card h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.post-card p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(10, 122, 29);
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrow.left {
+  left: 15px;
+}
+
+.arrow.right {
+  right: 15px;
+}
+
+.arrow:hover {
+  color: #0a781d;
+}

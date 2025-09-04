@@ -1,0 +1,238 @@
+.register-main {
+  height: 100vh;
+  width: 100vw;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-page {
+  /* border: 1px solid red; */
+  height: 90vh;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgb(25, 109, 59), -5px -5px 5px rgb(25, 109, 59);
+}
+
+.reg-design-effect1 {
+  /* border: 1px solid red; */
+  background-color: rgb(25, 109, 59);
+  border-radius: 0px 250px 0px 150px;
+}
+.reg-design-effect2 {
+  /* border: 1px solid red; */
+  /* background-color: rgb(25, 109, 59); */
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px 130px 150px 150px;
+  height: 100%;
+  /* align-items: center; */
+  align-content: center;
+}
+.reg-vertical-line {
+  height: 100%;
+  width: 1px;
+  border: none;
+  background: black;
+}
+.register-left,
+.register-right {
+  /* border: 1px solid blueviolet; */
+  height: 550px;
+  width: 39vw;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  align-content: center;
+}
+.register-right {
+  background-color: rgb(25, 109, 59);
+  padding: 10px;
+  border-radius: 50px 0px 0px 0px;
+}
+.reg-create-acc,
+.reg-login-redirect {
+  color: rgb(25, 109, 59);
+}
+.reg-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reg-form input {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 300px;
+  outline: none;
+  text-align: center;
+  background: transparent;
+  padding: 4px;
+  box-sizing: border-box;
+
+}
+.reg-form input:focus {
+  border-bottom: 2px solid rgb(25, 109, 59);
+}
+.reg-submit{
+    margin-top: 10px;
+}
+.reg-submit-input {
+  height: 35px;
+  width: 150px;
+  background-color: rgb(25, 109, 59);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.reg-login {
+  height: 35px;
+  width: 150px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(25, 109, 59);
+  border-radius: 20px;
+  border: none;
+  font-weight: bolder;
+}
+.reg-login-link1 {
+  text-decoration: none;
+}
+.reg-inputs,
+.reg-email,
+.reg-phone,
+.reg-password,
+.reg-confirm-password {
+  display: flex;
+  flex-direction: column;
+}
+.err-message {
+  display: block;
+  text-align: center;
+  color: red;
+  height: 15px;
+  line-height: 18px;
+  /* border: 1px solid red; */
+  /* margin-top: 5px; */
+}
+
+@media screen and (max-width: 600px) {
+  .reg-design-effect1 {
+    display: none;
+  }
+
+  .register-right {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 20px 20px;
+    padding: 20px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  .reg-design-effect2 {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 50px 50px;
+    align-content: center;
+    box-sizing: border-box;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  .reg-submit {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .reg-form {
+    display: grid;
+    gap: 15px;
+    /* flex-direction: column; */
+    /* overflow-y: auto; */
+  }
+
+  .reg-inputs,
+  .reg-email,
+  .reg-phone,
+  .reg-password,
+  .reg-confirm-password {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .reg-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .reg-design-effect1 {
+    height: 100%;
+    align-content: center;
+  }
+
+  .register-right {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 20px 20px 20px 0px;
+  }
+  .reg-design-effect2 {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 50px 50px;
+    align-content: center;
+    box-sizing: border-box;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  .reg-submit {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .reg-form {
+    display: grid;
+    /* flex-direction: column; */
+    gap: 15px;
+    /* overflow-y: auto; */
+  }
+
+  .reg-inputs,
+  .reg-email,
+  .reg-phone,
+  .reg-password,
+  .reg-confirm-password {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .reg-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,43 @@
+.myaccountpage {
+  height: 100vh;
+  width: 100vw;
+  /* display: flex; */
+  align-items: center;
+  /* align-content: center; */
+  /* border: 1px solid blue; */
+}
+.acc-heading {
+  /* border: 1px solid red; */
+  height: 60px;
+  /* width: 100%; */
+  text-align: center;
+  background-color: rgb(10, 122, 29);
+  color: white;
+}
+.acc-table {
+  border: none;
+  box-shadow: 5px 5px 10px green,-5px -5px 10px green;
+  height: 400px;
+  width: 600px;
+  display: grid;
+  grid-column: auto;
+  text-align: center;
+  padding: 20px;
+  /* align-content: center; */
+  /* align-items: center; */
+}
+.table-parent{
+    display: flex;
+    align-items: center;
+    /* align-content: center; */
+    justify-content: center;
+    margin-top: 70px;
+}
+.acc-table tr:nth-child(even){
+    background-color: green;
+    color: white;
+}
+.acc-table tr:nth-child(odd){
+    background-color: white;
+    color:black;
+}
