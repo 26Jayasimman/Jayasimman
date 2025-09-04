@@ -65,6 +65,11 @@ assignment-1/
 - API endpoints used: `https://jsonplaceholder.typicode.com/users` and `https://jsonplaceholder.typicode.com/posts`.
 - Local storage is used to persist user login status and profile data.
 
+## Github Link
+
+Github : `https://github.com/26Jayasimman/Jayasimman`
+
+
 ## Deployed Links
 
 Assesment-1 Deployed Link (Vercel) : `https://onevarsity-assignment-1.vercel.app/`
