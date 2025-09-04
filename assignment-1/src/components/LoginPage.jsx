@@ -1,7 +1,27 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../styles/LoginPage.css";
+import { useState } from "react";
 
 function LoginPage() {
+
+  const[email,setEmail]=useState("")
+  const[password,setPassword]=useState("")
+  const[message,setMessage]=useState("")
+
+  const navigate=useNavigate()
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    const savedUser = JSON.parse(localStorage.getItem("userData") || "{}");
+
+    if (email === savedUser.email && password === savedUser.password) {
+      setMessage("Login successful!");
+      navigate('/dashboard')
+    } else {
+      setMessage("Invalid email or password!");
+    }
+  };
   return (
     <>
       <div className="lognipage-main">
@@ -49,12 +69,11 @@ function LoginPage() {
                     name="Email"
                     type="text"
                     placeholder="Email"
+                    onChange={(e) => setEmail(e.target.value)}
                     required
                   />
                 </div>
-                {/* <div className="email-validation" id="email-validate">
-                  Not Valid!
-                </div> */}
+          
 
                 <div className="login-input-password">
                   <input
@@ -62,14 +81,13 @@ function LoginPage() {
                     name="password"
                     type="password"
                     placeholder="Password"
+                    onChange={(e) => setPassword(e.target.value)}
                     required
                   />
                 </div>
-                {/* <div className="password-validation" id="password-validate">
-                  Not Valid!
-                </div> */}
+               
                 <div className="forget-password">
-                  <Link className="forgot-pass-link" to={'#'}><h5>Forgot your Password?</h5></Link>
+                  <p className="errormessage"> {message}</p>
                 </div>
 
                 <div className="button-login">
@@ -77,6 +95,7 @@ function LoginPage() {
                     className="form-submision"
                     type="submit"
                     value={"LOG IN"}
+                    onClick={handleLogin}
                   />
                 </div>
               </form>

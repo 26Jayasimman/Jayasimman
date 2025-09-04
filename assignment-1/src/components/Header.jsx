@@ -15,6 +15,9 @@ function Header({active}) {
     navigate('/')
     localStorage.clear()
   }
+  const handleMyAccount=()=>{
+    navigate('/myaccount')
+  }
   return (
     <>
       <header className="header">
@@ -26,7 +29,7 @@ function Header({active}) {
             <h3>{titles[active] || "Dashboard"}</h3>
           </div>
           <div className="section-3">
-            <div className="myaccount">My Account</div>
+            <div className="myaccount" onClick={handleMyAccount}>My Account</div>
             <button className="logout" onClick={handleLogout}>Logout</button>
           </div>
         </nav>

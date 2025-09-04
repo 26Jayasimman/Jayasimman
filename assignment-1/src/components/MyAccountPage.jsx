@@ -2,7 +2,7 @@ import "../styles/MyAccountPage.css";
 
 function MyAccountPage() {
     const savedTime = localStorage.getItem("registerTime");
-    const userData=JSON.parse(localStorage.getItem("userData") || {})
+    const userData=JSON.parse(localStorage.getItem("userData") || "{}")
     let formattedDate=""
 
 if (savedTime) {

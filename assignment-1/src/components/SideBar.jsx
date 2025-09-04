@@ -3,6 +3,8 @@ import demoimage from "/demo-image.jpg";
 
 
 function SideBar({setActive,active}) {
+    const savedUser = JSON.parse(localStorage.getItem("userData") || "{}");
+
   return (
     <>
       <div className="sidebar-main">
@@ -12,8 +14,8 @@ function SideBar({setActive,active}) {
               <img className="profile" src={demoimage} alt="image not given" />
             </div>
             <div className="profile-name">
-              <div className="user-name">Jayasimman</div>
-              <div className="user-email">jaya1234@iytfyd.com</div>
+              <div className="user-name">{savedUser.firstname}</div>
+              <div className="user-email">{savedUser.email}</div>
             </div>
           </div>
           <hr className="line"/>
