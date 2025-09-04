@@ -5,11 +5,10 @@ import RegisterPage from "./components/RegisterPage";
 import SideBar from "./components/SideBar";
 import Header from "./components/Header";
 import UserProfile from "./components/UserProfile";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import DashBoard from "./components/DashBoard";
-import DashContents from "./components/dash-content";
+import DashContents from "./components/DashContent";
 import MyAccountPage from "./components/MyAccountPage";
-
 
 function App() {
   return (
@@ -22,8 +21,8 @@ function App() {
           <Route path="/header" element={<Header />} />
           <Route path="/userprofile" element={<UserProfile />} />
           <Route path="/dashboard" element={<DashBoard />} />
-          <Route path="/dash-content" element={<DashContents/>} />
-          <Route path="/myaccount" element={<MyAccountPage/>} />
+          <Route path="/dash-content" element={<DashContents />} />
+          <Route path="/myaccount" element={<MyAccountPage />} />
         </Routes>
       </BrowserRouter>
     </>

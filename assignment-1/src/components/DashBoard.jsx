@@ -4,7 +4,7 @@ import UserProfile from "./UserProfile";
 import SideBar from "./SideBar";
 // import LoginPage from "./LoginPage";
 import { useState } from "react";
-import DashContents from "./dash-content";
+import DashContents from "./DashContent";
 
 function DashBoard() {
   const [active, setActive] = useState("dashboard");
