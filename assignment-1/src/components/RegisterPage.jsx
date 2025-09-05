@@ -97,7 +97,9 @@ function RegisterPage() {
             <div className="register-left">
               <div className="reg-logo-containdiv">
                 <div className="reg-logo-center">
-                  <div className="reg-logo-div">O!</div>
+                  <div className="reg-logo-div">
+                  <i className="fa-solid fa-hand-holding-heart icon"></i>
+                  </div>
                 </div>
                 <div>
                   <h2>OneVarsity</h2>

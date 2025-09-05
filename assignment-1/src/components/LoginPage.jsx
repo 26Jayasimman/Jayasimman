@@ -30,7 +30,10 @@ function LoginPage() {
             <div className="Login-left">
               <div className="logo-containdiv">
                 <div className="logo-center">
-                  <div className="logo-div">O!</div>
+                  <div className="logo-div">
+            <i className="fa-solid fa-hand-holding-heart icon"></i>
+
+                  </div>
                 </div>
                 <div>
                   <h2>OneVarsity</h2>
